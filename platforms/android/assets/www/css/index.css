@@ -1,0 +1,124 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  font-size: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: #88AEC4;
+  width: 500px;
+}
+
+.wrapper {
+  min-height: 400px;
+  width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-radius: 1rem;
+  border: 0.5rem solid white;
+  background: #135378;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
+}
+
+header {
+  padding: 1.5rem 1rem;
+  background: white;
+}
+
+
+::-webkit-input-placeholder {
+  color: #FFF;
+  font-size: 20px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #34495e;
+}
+
+.input-container {
+  position: relative;
+  overflow: auto;
+  padding: 2rem;
+}
+
+[name="getItem"] {
+  float: left;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: #FFF;
+  background-color: #B43C52;
+}
+
+.add-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.add-icon:after {
+  content: '+';
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 3px auto;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 35px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.list {
+  margin: 0;
+  padding: 0 2rem 2rem;
+  list-style-type: none;
+  clear: both;
+  font-size: 1.4rem;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.list .close {
+  position: relative;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.list .close:after {
+  opacity: .6;
+  content: '-';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #B43C52;
+  background: #FFF;
+  cursor: pointer;
+}
+
